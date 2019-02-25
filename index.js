@@ -1,26 +1,97 @@
-function BoardMember (name, homeState, training) {
-  this.name = name;
-  this.homeState = homeState;
-  this.training = training;
+class BoardMember{
 
-  this.veto = function () {
-    console.log("No, I must disagree");
+
+
+  constructor(name, homeState, training){
+
+
+
+    this.name = name
+
+
+
+    this.homeState = homeState
+
+
+
+    this.training = training
+
+
+
   }
 
-  this.approve = function () {
-    console.log('You can do that!')
+
+
+  veto(){
+
+
+
+    return `No, I must disagree`
+
+
+
   }
 
-  this.doCharity = function () {
-    console.log("I like to help people.")
+
+
+
+
+
+
+  approve(){
+
+
+
+    return `You can do that!`
+
+
+
   }
 
-  this.releasePressStatement = function () {
-    console.log('You will see great things from Scuber.')
+
+
+
+
+
+
+  doCharity () {
+
+
+
+    return `I like to help people.`
+
+
 
   }
 
-  this.sayHi = function () {
-    console.log(`Hi, my name is ${name}. I am from ${homestate}, and I was trained in ${training}.`)
-  }
+
+
+
+
+
+
+  releasePressStatement () {
+
+
+
+   return `You will see great things from Scuber.`
+
+
+
+ }
+
+
+
+  sayHi() {
+
+
+
+    return `Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`
+
+
+
+}
+
+
+
 }
